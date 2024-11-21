@@ -241,6 +241,34 @@ h1{
 
 }
 
+.projectcards{
+    padding: 2em;
+    border: 1px solid #15b551;
+    border-radius: 10px;
+    background-color: #ebfff3;
+    text-align: center;
+}
+
+.grid-container{
+    justify-content: center;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+}
+
+.grid-container a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #15b551;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
 @media(max-width: 800px){
     .hideOnMobile{
         display: none;

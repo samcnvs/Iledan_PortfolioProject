@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatiblr" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Projects - Portfolio
+    </title>
+    <link rel="icon" type="image/x-icon" href="Assets/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Navigation Bar/Sidebar-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()> <a href="#"><img src="Assets/xclose.svg" height="26" width="26"></a></li>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="skills.html">Skills</a></li>
+            <li> <a href="projects.html">Projects</a></li>
+            <li> <a href="contacts.html">Contacts</a></li>
+        </ul>
+        <ul>
+            <li> <a href="index.html">SAMcnvs</a></li>
+            <li class="hideOnMobile"> <a href="index.html">Home</a></li>
+            <li class="hideOnMobile"> <a href="skills.html">Skills</a></li>
+            <li class="hideOnMobile"> <a href="projects.html">Projects</a></li>
+            <li class="hideOnMobile"> <a href="contacts.html">Contacts</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="Assets/hamburger.svg" height="26" width="26"></a></li>
+        </ul>
+    </nav>
+    <h1>
+      Projects
+    </h1>
+    <div class="grid-container">
+      <div class="projectcards">
+        <h2>ATM Simulation Project</h2>
+        <p>To implement paralllel arrays or array of structures in OOP and C++ through an ATM system that includes registration and transaction modules. The system utilizes a flash drive as an ATM card.</p>
+        <a href="https://github.com/samcnvs/Iledan_ProgProjs/blob/main/PROJECT_ATMSimulation.cpp" target="_blank">Github</a>
+      </div>
+      <div class="projectcards">      
+        <h2>Student Assessment Tracker</h2>
+        <p>This project aims to help instructors easily examine individual and group student performance throughout a series of tests, identifying trends, strengths, and areas for development.</p>
+        <a href="https://github.com/samcnvs/Iledan_ProgProjs/tree/main/PROJECT_StudentAssessmentTracker" target="_blank">Github</a>
+
+      </div>
+      <div class="projectcards">
+        <h2>Minesweeper</h2>
+        <p>The game takes place in a grid-based area known as the map. At the beginning of each game, there are 10 hidden explosives on the map. Players interact with the game by entering coordinates (X, Y) to choose a specific cell on the grid. Players begin the game with three lives. Each interaction with a bomb results in the death of one life and the impacted cell is marked as triggered on the map. The game finishes if a player loses all of his or her life (by hitting three bombs).</p>
+        <a href="https://github.com/samcnvs/Iledan_ProgProjs/blob/main/PROJECT_Minesweeper" target="_blank">Github</a>
+
+      </div>
+      <div class="projectcards">
+        <h2>Simple Information Form Program with a Database System</h2>
+        <p>A Java program that allows users to login, input new data, search a user's data, update old data, and delete information. The application is linked to a MySQL database.</p>
+        <a href="https://github.com/samcnvs/Iledan_ProgProjs/tree/main/PROJECT_SimpleInformationFormProgram" target="_blank">Github</a>
+
+      </div>
+
+
+
+    </div>
+
+    
+    
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }  
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }    
+    </script>
+  </body>
+</html>
