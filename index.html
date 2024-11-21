@@ -8,17 +8,38 @@
         Home - Portfolio
     </title>
     <link rel="icon" type="image/x-icon" href="Assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!--Navigation Bar/Sidebar-->
     <nav>
-        <ul>
-            <li> <a href="#">SAMcnvs</a></li>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()> <a href="#"><img src="Assets/xclose.svg" height="26" width="26"></a></li>
             <li> <a href="#">Home</a></li>
             <li> <a href="#">Skills</a></li>
             <li> <a href="#">Projects</a></li>
             <li> <a href="#">Experiences</a></li>
             <li> <a href="#">Contacts</a></li>
         </ul>
+        <ul>
+            <li> <a href="#"><img src="Assets/favicon.png" height="20" width="70"></a></li>
+            <li class="hideOnMobile"> <a href="#">Home</a></li>
+            <li class="hideOnMobile"> <a href="#">Skills</a></li>
+            <li class="hideOnMobile"> <a href="#">Projects</a></li>
+            <li class="hideOnMobile"> <a href="#">Experiences</a></li>
+            <li class="hideOnMobile"> <a href="#">Contacts</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="Assets/hamburger.svg" height="26" width="26"></a></li>
+        </ul>
     </nav>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }  
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }    
+    </script>
   </body>
 </html>
