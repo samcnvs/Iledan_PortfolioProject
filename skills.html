@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatiblr" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Skills - Portfolio
+    </title>
+    <link rel="icon" type="image/x-icon" href="Assets/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Navigation Bar/Sidebar-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()> <a href="#"><img src="Assets/xclose.svg" height="26" width="26"></a></li>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="skills.html">Skills</a></li>
+            <li> <a href="#">Projects</a></li>
+            <li> <a href="#">Experiences</a></li>
+            <li> <a href="#">Contacts</a></li>
+        </ul>
+        <ul>
+            <li> <a href="index.html">SAMcnvs</a></li>
+            <li class="hideOnMobile"> <a href="index.html">Home</a></li>
+            <li class="hideOnMobile"> <a href="skills.html">Skills</a></li>
+            <li class="hideOnMobile"> <a href="#">Projects</a></li>
+            <li class="hideOnMobile"> <a href="#">Experiences</a></li>
+            <li class="hideOnMobile"> <a href="#">Contacts</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="Assets/hamburger.svg" height="26" width="26"></a></li>
+        </ul>
+    </nav>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }  
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }    
+    </script>
+  </body>
+</html>
